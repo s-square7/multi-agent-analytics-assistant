@@ -14,10 +14,10 @@ and a Streamlit UI.
   <img alt="License" src="https://img.shields.io/badge/license-MIT-blue">
 </p>
 
-> **Capstone Project — Level 2**
-> Submitted for the **Summer Training and Internship Programme on Machine Learning & Agentic AI**
-> **Electronics & ICT Academy, Indian Institute of Technology Roorkee**
-> Author: **Shuvam Saren** · M.Tech (Computer Science & Data Processing), IIT Kharagpur
+> **Capstone Project — Level 2**  
+> Submitted for the **Summer Training and Internship Programme on Machine Learning & Agentic AI**  
+> **Electronics & ICT Academy, Indian Institute of Technology Roorkee**  
+> Author: **Shuvam Saren** · M.Tech (Computer Science & Data Processing), IIT Kharagpur  
 
 ---
 

@@ -1,0 +1,33 @@
+# Runs the Streamlit app alongside a co-located Ollama server.
+# The app reaches Ollama at http://ollama:11434 (service DNS name), which
+# solves the "localhost points at the container, not your laptop" problem.
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: analytics_ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_models:/root/.ollama
+    # For GPU: install the NVIDIA container toolkit and uncomment below.
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: all
+    #           capabilities: [gpu]
+
+  app:
+    build: .
+    container_name: analytics_app
+    depends_on:
+      - ollama
+    ports:
+      - "8501:8501"
+    environment:
+      - OLLAMA_BASE_URL=http://ollama:11434
+      - OLLAMA_MODEL=llama3.2:3b
+
+volumes:
+  ollama_models:

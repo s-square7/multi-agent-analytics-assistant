@@ -1,4 +1,4 @@
-# Multi-Agent Analytics Assistant
+# Multi-Agent Analytics Assistant with CrewAI and MCP
 
 **A local, privacy-preserving multi-agent analytics chat assistant** built with CrewAI
 (hierarchical delegation), Ollama (local LLM), a local **MCP server**, function tools,

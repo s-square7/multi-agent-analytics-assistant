@@ -88,7 +88,7 @@ multi-agent-analytics-assistant/
 
 **1. Clone and install**
 ```bash
-git clone https://github.com/<your-username>/multi-agent-analytics-assistant.git
+git clone https://github.com/s-square7/multi-agent-analytics-assistant.git
 cd multi-agent-analytics-assistant
 python -m venv .venv && source .venv/bin/activate    # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
